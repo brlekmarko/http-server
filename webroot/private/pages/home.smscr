@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {background-color: #{$= "background" "7F7F7F" @tparamGet $};}
+		.center-div {display: flex; justify-content: center;}
+		</style>
+	</head>
+	
+	<body class="center-div">
+		<div>
+			<a href="/scripts/osnovni.smscr">Osnovni.smscr</a> <br/> <br/>
+			<a href="/scripts/brojPoziva.smscr">BrojPoziva.smscr</a> <br/> <br/>
+			<a href="/scripts/fibonaccih.smscr">Fibonnaccih.smscr</a> <br/> <br/>
+			<a href="/ext/HelloWorker">HelloWorker</a> <br/> <br/>
+			<a href="/ext/CircleWorker">CircleWorker</a> <br/> <br/>
+			
+			<form action="/ext/SumWorker" method="GET">
+				<label for="a">First number:</label><br>
+				<input type="number" step="1" id="a" name="a" value="1"><br>
+				<label for="b">Second number:</label><br>
+				<input type="number" step="1" id="b" name="b" value="2"><br>
+				<input type="submit" value="Submit to SumWorker">
+			</form>
+			</br></br></br></br></br>
+			<form action="/setbgcolor" method="GET">
+				<label for="bgcolor">Select background color:</label><br>
+				<select name="bgcolor">
+					<option value="FF0000">Red</option>
+					<option value="00FFFF">Aqua Blue</option>
+					<option value="191970">Midnight Blue</option>
+					<option value="CD7F32">Bronze Orange</option>
+					<option value="FFFFFF">White</option>
+				</select>
+				</br>
+				<input type="submit" value="Submit to BgColorWorker">
+			</form>
+		</div>
+	</body>
+</html>
