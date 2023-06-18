@@ -5,4 +5,4 @@ Uses a custom scripting language "Smartscript".
 Uses cookies for session management.
 
 Maven project, main function is located in class "SmartHttpServer".
-Properties are configured in /config/something.properties.
+Properties are configured in /config/something.properties, uses port 5721 by default.
